@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;;
+}
+
+
+/* PRIMEIRA SESSAO */
+
+#banner .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;  /*da um espacamento no eixo principal, como esta em column,vai ser na vertical*/
+
+}
+
+.banner-content h1{
+    color: #FF4081;
+    font-size: 60px;
+}
+
+.banner-content p{
+    font-size: 27px;
+
+}
+
+.banner-content a{
+    color: #ff4081;
+    font-size: 27px;
+    text-decoration: none;
+    border: #ff4081 solid 2px;
+    padding: 5px 19px;
+    border-radius: 30px;
+}
+
+.banner-image{
+    padding: 40px;
+
+}
+
+.banner-image img{
+    width: 100%;
+}
+
+
+/* SEGUNDA SESSAO */
+
+#content-1{
+    background-color: #E5E5E5;
+}
+
+#content-1 .wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 40px;
+    flex-wrap: wrap;
+}
+
+.cursos{
+    text-align: center;
+    max-width: 344px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cursos img{
+    height: 270px;
+}
+
+.cursos h2{
+    margin-top: 40px;
+    color: #FF4081;
+    font-size: 25px;
+}
+
+.cursos p{
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.cursos a{
+    margin-top: 20px;
+    font-size: 17px;
+    color: #fff;
+    background: #FF4081;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 30px;
+}
+
+/* TERCEIRA SESSAO */
+#content-2 .wrapper{
+    padding: 60px;
+}
+
+#content-2 .wrapper h2{
+    color: #009688;
+    font-size: 37px;
+    font-weight: normal;
+}
+
+.opinion-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    justify-content: space-between;
+}
+
+.opinion{
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.text{
+    padding-left: 40px;
+    width: 400px;
+    text-align: justify;
+}
+
+/* QUARTA SESSAO */
+
+#more-content{
+    background-color: #E5E5E5;
+}
+
+#more-content .wrapper{
+    padding: 60px;
+}
+
+#more-content .wrapper h2{
+    color: #009688;
+    font-size: 37px;
+}
+
+.list-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.card{
+    max-width: 320px;
+}
+
+.card h3{
+    color: #009688;
+    margin-top: 10px;
+    font-size: 27px;
+}
+
+.card p{
+    text-align: justify;
+    font-size: 18px;
+}   
+
+.botao{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#more-content .wrapper a{
+    text-decoration: none;
+    border: #ff4081 2px solid;
+    border-radius: 30px;
+    padding: 6px 30px;
+    color: #FF4081;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 767px){
+
+    /* PRIMEIRA SESSAO */
+    .banner-image{
+        display: none;
+    /* sumir com a imagem quando o display for menor  */
+    }
+
+    .banner-content{
+        align-items: center;
+    }
+
+    .banner-content h1{
+        font-size: 40px;
+    }
+
+    /* SEGUNDA SESSAO */
+    #content-1 .wrapper{
+        justify-content: center;
+    }
+
+    .cursos{
+        margin-top: 60px;
+    }
+
+    /* TERCEIRA SESSAO */
+    .text{
+        width: 250px;
+    }
+
+    .opinion-list{
+        justify-content: center;
+    }
+
+    /* QUARTA SESSAO */   
+    .list-content{
+        justify-content: center;
+    }
+
+    #more-content .wrapper h2{
+        text-align: center;
+    }
+
+}
