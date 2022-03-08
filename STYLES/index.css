@@ -156,6 +156,7 @@
 
 .card{
     max-width: 320px;
+    cursor: pointer;
 }
 
 .card h3{
@@ -174,13 +175,35 @@
     margin-top: 50px;
 }
 
-#more-content .wrapper a{
+.ver-tudo{
     text-decoration: none;
     border: #ff4081 2px solid;
     border-radius: 30px;
     padding: 6px 30px;
     color: #FF4081;
 }
+
+/* HOVER */
+.banner-content a:hover{
+    color: #fff;
+    background: #ff4081;
+    transition: 200ms;
+}
+
+.cursos a:hover{
+    color: #ff4081;
+    border: #ff4081 solid 1px;
+    background: #fff;
+    transition: 200ms;
+}
+
+.ver-tudo:hover{
+    background: #ff4081;
+    color: #fff;
+    transition: 200ms;
+}
+
+
 
 
 /* RESPONSIVIDADE */

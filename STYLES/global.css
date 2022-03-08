@@ -31,7 +31,7 @@ header .wrapper{
     flex-wrap: wrap;
 }
 
-nav a{
+.botao-header{
     color: #fff;
     text-decoration: none;
     font-size: 20px;
@@ -54,12 +54,15 @@ footer .wrapper{
 .menu-footer{
     display: flex;
     flex-direction: column;
+    
 }
 
 .menu-footer a{
     margin: 3px;
     text-transform: lowercase;
     font-weight: 300;
+    text-decoration: none;
+    color: #fff;
 }
 
 .mais{
@@ -73,8 +76,29 @@ footer .wrapper{
     border: #fff 1px solid;
     padding: 9px 50px;
     border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
 }
 
+/* HOVER */
+.botao-header:hover{
+    border: #ff4081 3px solid;
+    padding: 5px 10px;
+    border-radius: 30px;
+    color: #ff4081;
+    transition: 300ms;
+}
+
+.menu-footer a:hover{
+    text-decoration: underline;
+}
+
+.mais a:hover{
+    color: #ff4081;
+    background: #fff;
+}
+
+/* RESPONSIVIDADE */
 @media (max-width: 767px){
 
     header .wrapper{
@@ -92,3 +116,5 @@ footer .wrapper{
         padding: 30px;
     }
 }
+
+
