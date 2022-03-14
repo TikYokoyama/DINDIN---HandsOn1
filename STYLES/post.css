@@ -95,6 +95,18 @@
 
 
 /* RESPONSIVIDADE */
+@media screen and (max-width: 1550px){
+    #post .wrapper{
+        padding: 80px 30px;
+        text-align: center;
+        
+    }
+
+    .poster-image img{
+        width: 700px;
+    }
+}
+
 
 @media screen and (max-width: 768px){
 
