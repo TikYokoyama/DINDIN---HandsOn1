@@ -10,13 +10,12 @@
     font-family: Ubuntu;
 }
 
-
-/* HEADER */
-
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+/* HEADER */
 
 header {
     background-color: #2E948A;
@@ -35,7 +34,7 @@ header .wrapper{
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    margin: 0 25px;
+    margin: 0 20px;
 }
 
 /* FOOTER */
@@ -82,9 +81,6 @@ footer .wrapper{
 
 /* HOVER */
 .botao-header:hover{
-    border: #ff4081 3px solid;
-    padding: 5px 10px;
-    border-radius: 30px;
     color: #ff4081;
     transition: 300ms;
 }

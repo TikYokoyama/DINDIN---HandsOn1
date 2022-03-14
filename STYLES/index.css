@@ -9,7 +9,7 @@
 
 
 /* PRIMEIRA SESSAO */
-
+    
 #banner .wrapper{
     display: flex;
     justify-content: center;
@@ -67,6 +67,7 @@
     justify-content: space-between;
     padding: 70px 40px;
     flex-wrap: wrap;
+    
 }
 
 .cursos{
@@ -208,7 +209,7 @@
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 767px){
+@media screen and (max-width: 450px){
 
     /* PRIMEIRA SESSAO */
     .banner-image{
@@ -234,13 +235,31 @@
     }
 
     /* TERCEIRA SESSAO */
-    .text{
-        width: 250px;
+
+    #content-2 .wrapper{
+        text-align:  center;
     }
 
     .opinion-list{
         justify-content: center;
     }
+
+    .text{
+        width: 250px;
+        padding: 0;
+    }
+
+    .opinion{
+        justify-content: center;
+        width: 250px;
+        flex-direction: column;
+    }
+
+    .opinion img{
+        padding-bottom: 15px;
+    }
+
+
 
     /* QUARTA SESSAO */   
     .list-content{
@@ -251,4 +270,83 @@
         text-align: center;
     }
 
+    .card{
+        padding-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    /* PRIMEIRA SESSAO */
+    #banner .wrapper{
+        padding: 0 10px;
+    }
+
+    .banner-image{
+        width: 400px;
+    }
+
+    .banner-content{
+        align-items: center;
+    }
+
+    .banner-content h1{
+        font-size: 35px;
+    }
+
+    .banner-content p{
+        font-size: 20px;
+    }
+
+    .banner-content a{
+        font-size: 15px
+    }
+    
+    /* SEGUNDA SESSAO */
+    #content-1 .wrapper{
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .cursos{
+        margin-top: 60px;
+    }
+
+    /* TERCEIRA SESSAO */
+
+    .text{
+        width: 250px;
+        padding: 0;
+    }
+
+    .opinion{
+        justify-content: center;
+        width: 250px;
+        flex-direction: column;
+    }
+
+    .opinion img{
+        padding-bottom: 15px;
+    }
+
+
+
+    /* QUARTA SESSAO */   
+    .list-content{
+        justify-content: space-around;
+    }
+
+    #more-content .wrapper{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #more-content .wrapper h2{
+        text-align: center;
+    }
+
+    .card{
+        padding-bottom: 50px;
+    }
 }

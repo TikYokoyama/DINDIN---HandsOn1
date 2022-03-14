@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;;
+}
+
+/* PRIMEIRA SESSAO */
+
+#post .wrapper{
+    padding: 100px 200px 200px 200px;
+}
+
+.titulo{
+    text-align: center;
+    color: #FF4081;
+    font-size: 50px;
+}
+
+.data{
+    text-align: center;
+    color: #9D9D9D;
+    font-size: 19px;
+    padding: 20px 0;
+}
+
+.poster-image{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.topic p{
+    text-align: justify;
+}
+
+.topic h2{
+    margin: 70px 0 30px 0 ;
+    color: #2E948A;
+}
+
+/* SEGUNDA SESSAO */
+
+#more-content{
+    background: #D5D5D5;
+    text-align: center;
+}
+
+#more-content .wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#more-content h4{
+    color: #FF4081;
+    font-size: 50px;
+    padding: 80px 0;
+    font-weight: normal;
+}
+
+.card{
+    width: 344PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h5{
+    color: #FF4081;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.card img{
+    height: 280PX;
+}
+
+.card p{
+    font-size: 17px;
+}
+
+.card a{
+    text-decoration: none;
+    color: #fff;
+    background: #FF4081;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 768px){
+
+    /* PRIMEIRA SESSAO */
+    #post .wrapper{
+        padding: 80px 50px;
+        text-align: center;
+        
+    }
+
+    .titulo{
+        font-size: 35px;
+    }
+
+    .poster-image img{
+        width: 450px;
+    }
+
+    .topic{
+        width: 450px;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    /* SEGUNDA SESSAO */
+}
+
+@media screen and (max-width: 450px){
+
+    /* PRIMEIRA SESSAO */
+
+    .titulo{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .data{
+        margin: 10px 0;
+    }
+
+    .topic{
+        width: 275px;
+    }
+
+    .topic h2{
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    .poster-image img{
+        width: 275px;
+        margin: 30px 0;
+    }
+
+    /* SEGUNDA SESSAO */
+}
+
+

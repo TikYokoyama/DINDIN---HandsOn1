@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;;
+}
+
+/* PRIMEIRA SESSAO */
+
+#banner .wrapper{
+    display: flex;
+    padding: 80px 100px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}   
+
+.texto-banner{
+    width: 40%;
+}
+
+.texto-banner h1{
+    font-size: 47px;
+    color: #009688;
+    margin: 40px 0;
+}
+
+.texto-banner p{
+    font-size: 20px;
+}
+
+.imagem-banner img{
+    margin-left: 100px;
+}
+
+/* SEGUNDA SESSAO */
+
+#conteudo{
+    background: #E5E5E5;
+    padding-bottom: 150px;
+}
+
+#conteudo .wrapper{
+    flex-wrap: wrap;
+    padding: 60px 150px;
+    flex-direction: column;
+}
+
+.card{
+    padding: 50px 0;
+}
+
+.card a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.card img{
+    padding-right: 70px;
+}
+
+.card h2{
+    color: #FF4081;
+    font-size: 30px;
+}
+
+.card p{
+    font-size: 17px; 
+    color: black;  
+    text-align: justify;
+}
+
+/* HOVER */
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 425px){
+
+    /* PRIMEIRA SESSAO */
+    #banner .wrapper{
+
+    }  
+
+    .texto-banner{
+
+    }
+
+    .imagem-banner{
+
+    }
+
+    /* SEGUNDA SESSAO */
+
+    #conteudo .wrapper{
+
+    }
+
+    .card{
+
+    }
+
+    .card img{
+
+    }
+
+    .card h2{
+
+    }
+
+    .card p{
+
+    }
+}
+

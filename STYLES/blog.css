@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;;
+}
+
+/* PRIMEIRA SESSAO */
+
+#banner .wrapper{
+    display: flex;
+    padding: 80px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}   
+
+.texto-banner{
+    width: 40%;
+}
+
+.texto-banner h1{
+    font-size: 47px;
+    color: #009688;
+    margin: 40px 0;
+}
+
+.texto-banner p{
+    font-size: 20px;
+}
+
+.imagem-banner img{
+    margin-left: 100px;
+}
+
+/* SEGUNDA SESSAO */
+
+#conteudo{
+    background: #E5E5E5;
+    padding-bottom: 150px;
+}
+
+#conteudo .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 110px;
+}
+
+.card{
+    max-width: 519px;
+    cursor: pointer;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card img{
+    margin-top: 90px ;
+}
+
+.card h2{
+    color: #FF4081;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.card p{
+    font-size: 17px; 
+    color: black;  
+    text-align: justify;
+}
+
+/* HOVER */
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 425px){
+
+    /* PRIMEIRA SESSAO */
+    #banner .wrapper{
+        display: flex;
+        padding: 30px 50px;
+    }  
+
+    .texto-banner{
+        width: 80%;
+        text-align: center;
+    }
+
+    .imagem-banner{
+        display: none;
+    }
+
+    /* SEGUNDA SESSAO */
+
+    #conteudo .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 30px;
+    }
+
+    .card{
+        max-width: 302px;
+        cursor: pointer;
+    }
+
+    .card img{
+        width: 300px;
+        margin-top: 70px;
+    }
+
+    .card h2{
+        margin: 10px 0;
+    }
+
+    .card p{
+        width: 300px;
+    }
+}
+
+@media (max-width: 1258px){
+
+    /* PRIMEIRA SESSAO */
+    #banner .wrapper{
+        display: flex;
+        padding: 30px 50px;
+    }  
+
+    .texto-banner{
+        width: 80%;
+        text-align: center;
+    }
+
+    .imagem-banner{
+        display: none;
+    }
+
+    /* SEGUNDA SESSAO */
+
+    #conteudo .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 60px;
+    }
+
+    .card{
+        max-width: 302px;
+        cursor: pointer;
+    }
+
+    .card img{
+        width: 300px;
+        margin-top: 70px;
+    }
+
+    .card h2{
+        margin: 10px 0;
+    }
+
+    .card p{
+        width: 300px;
+    }
+}
